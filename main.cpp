@@ -81,7 +81,7 @@ private:
 	}
 
 	void revealEmptyFields(int x, int y) {
-		if (!isValidField(x, y) || field[y][x].bomb || field[y][x].seen) return;
+		if (!isValidField(x, y) || field[y][x].bomb) return;
 
 		field[y][x].seenHere();
 
